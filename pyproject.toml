@@ -1,0 +1,19 @@
+[project]
+name = "bimanual-e2e"
+version = "0.1.0"
+dependencies = [
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "isaacsim[all,extscache]==4.5.0",
+    "vuer[all]==0.0.61",
+    "pyglet<2",
+    "dex-retargeting>=0.4.6",
+    "isaaclab[isaacsim,all]",
+    "pyzmq>=27.0.0",
+]
+
+[[tool.pip.extra-index-url]]
+url = "https://download.pytorch.org/whl/cu128"
+
+[[tool.pip.extra-index-url]]
+url = "https://pypi.nvidia.com"
